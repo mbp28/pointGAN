@@ -6,8 +6,8 @@ from modules.emd import EMDModule
 
 dist =  EMDModule()
 
-p1 = torch.rand(10,1000,6)
-p2 = torch.rand(10,1500,6)
+p1 = torch.rand(1,1000,6)
+p2 = torch.rand(1,1000,6)
 points1 = Variable(p1,requires_grad = True)
 points2 = Variable(p2, requires_grad = True)
 cost = dist(points1, points2)
